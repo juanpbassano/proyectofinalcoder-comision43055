@@ -7,7 +7,7 @@
 
 /*todo lo correspondiente al codigo*/
 body {
-  background-image: url(../assets/IMG/fondo.png);
+  background-image: url(../assets/img/fondo.png);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -107,7 +107,7 @@ main {
           main .gridmain section div ol li:nth-child(2) {
             background-color: #d93f05; }
           main .gridmain section div ol li:nth-child(3) {
-            background-image: url(../assets/IMG/BOTONLollipop-Rainbox-Swirl.jpg); }
+            background-image: url(../assets/img/botonlolipop.jpg); }
           main .gridmain section div ol li:nth-child(4) {
             background-color: #bdff00; }
         main .gridmain section div ol li:hover {
@@ -252,19 +252,19 @@ main {
       margin-left: 1.625rem; }
 
 .listaElec {
-  background-image: url(../assets/IMG/Electricidad.jpeg); }
+  background-image: url(../assets/img/Electricidad.jpeg); }
 
 .listaPlomero {
-  background-image: url(../assets/IMG/plomero.png); }
+  background-image: url(../assets/img/plomero.png); }
 
 .listaPintor {
-  background-image: url(../assets/IMG/pintordg.png); }
+  background-image: url(../assets/img/pintordg.png); }
 
 .listaConst {
-  background-image: url(../assets/IMG/constructor.png); }
+  background-image: url(../assets/img/constructor.png); }
 
 .lista404 {
-  background-image: url(..//assets/IMG/404404.jpg);
+  background-image: url(..//assets/img/404404.jpg);
   background-position: center; }
 
 footer {
@@ -305,7 +305,10 @@ footer {
     padding: .625rem;
     display: grid;
     grid-template: 1.875rem 12.5rem 4.375rem 3.125rem / 12.5rem 16rem;
-    grid-template-areas: "t1 t1" "datos consul" "selec selec" ". enviar"; } }
+    grid-template-areas: "t1 t1"
+ "datos consul"
+ "selec selec"
+ ". enviar"; } }
 
 @media screen and (max-width: 880px) {
   .gridmain .menuPrincipal {
@@ -329,7 +332,10 @@ footer {
     display: grid;
     grid-template-columns: 55% 45%;
     grid-template-rows: 1.875rem 12.5rem 4.375rem 3.125rem;
-    grid-template-areas: "t1 t1" "datos consul" "selec selec" ". enviar"; }
+    grid-template-areas: "t1 t1"
+ "datos consul"
+ "selec selec"
+ ". enviar"; }
     .gridFormulario .datos {
       display: block; }
       .gridFormulario .datos label input {
@@ -434,7 +440,8 @@ footer {
     display: grid;
     grid-template-columns: 14.25rem auto;
     grid-template-rows: 1fr 2fr;
-    grid-template-areas: "menuPrincipal antetitulo" "articulo articulo"; }
+    grid-template-areas: "menuPrincipal antetitulo"
+ "articulo articulo"; }
     body main .gridmain .antetitulo h2 {
       width: 7.5rem;
       height: 2rem;
@@ -474,7 +481,8 @@ footer {
     display: grid;
     grid-template-columns: 10rem auto;
     grid-template-rows: 1fr 2fr;
-    grid-template-areas: "menuPrincipal antetitulo" "articulo articulo"; }
+    grid-template-areas: "menuPrincipal antetitulo"
+ "articulo articulo"; }
     body main .gridmain .antetitulo h2 {
       width: 7rem;
       height: 2rem;
