@@ -1,0 +1,24 @@
+/*variables mixins y funciones*/
+@import "./Base/reset";
+@import "./Base/typos";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+/*todo lo correspondiente al codigo*/
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/titulos";
+@import "./components/bootstrap";
+@import "./layout/articulo";
+@import "./layout/footer";
+
+/*todo lo correspondiente a media queries*/
+@import "./layout/mediaQ/media960";
+@import "./layout/mediaQ/media880";
+@import "./layout/mediaQ/media768";
+@import "./layout/mediaQ/media721";
+@import "./layout/mediaQ/media590";
+@import "./layout/mediaQ/media425";
+@import "./layout/mediaQ/media375";
+@import "./layout/mediaQ/media320";

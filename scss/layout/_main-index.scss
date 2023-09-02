@@ -1,0 +1,132 @@
+main {
+    grid-area: main; /*ASIGNADO AL GRID DEL BODY*/
+    .gridmain{
+        @include grid(40% 60%, 7rem 27.25rem,"antetitulo antetitulo""menuPrincipal articulo");
+        section {
+            grid-area: menuPrincipal;
+            width: 24.375rem;
+            div {
+                @include flex(column, none, none, none);
+                margin-left: .625rem;
+                padding: 1rem;
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: $color-fuentes1; 
+                    letter-spacing: -0.01rem;
+                }
+                ol{
+                    li{
+                        &:nth-child(1){
+                            background-color: $color-background-elec;
+                        }
+                        &:nth-child(2){
+                            background-color: $color-background-plom;
+                        }
+                        &:nth-child(3){
+                            background-image: url(../assets/IMG/BOTONLollipop-Rainbox-Swirl.jpg);
+                        }
+                        &:nth-child(4){
+                            background-color: $color-background-const;
+                        }
+                        width: 9.375rem;
+                        height: 2.1875rem;
+                        border-radius: .625rem;
+                        box-shadow: .3125rem .3125rem .3125rem gray;
+                        list-style: none;                        
+                        margin: 1.25rem 1.25rem 1.25rem 3rem;
+                        display: flex;
+                        flex-direction: column;
+                        transition: transform 0.1s ease-in-out;
+                    }
+                    li:hover {
+                        transform: scale(1.2);
+                        }
+                        a{
+                            text-decoration: none;
+                            text-align: center;
+                            color: $color-fuentes2;
+                            font-weight: 500;
+                            padding: .3125rem;
+                        }
+                    }
+                }
+            }
+        }
+        div{
+            grid-area: articulo;   
+            }
+        }
+
+.menuArticulo{
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.575);
+        height: 25rem;
+        display: flex;
+        margin-top: 2rem;
+        p{
+            margin: auto auto auto .625rem;
+            color: $color-fuentes2;
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+        div{
+            @include flex(row, end, center, none);
+            img{
+                margin-right: 3rem;
+                width: 18.75rem;
+                height: 18.75rem;
+                border-radius: 50%;
+            }
+        }
+}
+
+.gridFormulario{
+    @include grid(12.5rem 18rem, 1.875rem 12.5rem 4.375rem 3.125rem, "t1 t1""datos consul""selec selec"". enviar" );
+    padding: .625rem;
+    background-color: #4CAF50;
+    border: solid rgba(0, 0, 0, 0.61) .0300rem;
+    border-radius: .313rem;
+    .t1{
+        grid-area: t1;
+        font-size: 1rem;
+        font-weight: 800;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+    }
+    .datos{
+        grid-area: datos;
+        @include flex(column, none, none, none);
+        input{
+            width: 95%;
+        }
+    }
+    .selec{
+        grid-area: selec;
+        display: block;
+        font-size: 0.8rem;
+        text-align: center;
+        input{
+            width: auto;
+            margin: .625rem;
+        }
+    }
+    .consul{
+        grid-area:consul;
+        display: block;
+    }
+    .enviar{
+        grid-area: enviar;
+        @include flex(row, right, center, none);
+        padding:0 1.25rem .625rem 0;
+        input{
+            width: 3.125rem;
+            height: 1.5625rem;
+            border-radius: .3125rem;
+            font-size: 0.9rem;
+            padding: .125rem .1875rem .3125rem .1875rem;
+        }
+    }
+}
+
