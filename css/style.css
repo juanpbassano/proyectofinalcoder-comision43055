@@ -305,10 +305,7 @@ footer {
     padding: .625rem;
     display: grid;
     grid-template: 1.875rem 12.5rem 4.375rem 3.125rem / 12.5rem 16rem;
-    grid-template-areas: "t1 t1"
- "datos consul"
- "selec selec"
- ". enviar"; } }
+    grid-template-areas: "t1 t1" "datos consul" "selec selec" ". enviar"; } }
 
 @media screen and (max-width: 880px) {
   .gridmain .menuPrincipal {
@@ -332,10 +329,7 @@ footer {
     display: grid;
     grid-template-columns: 55% 45%;
     grid-template-rows: 1.875rem 12.5rem 4.375rem 3.125rem;
-    grid-template-areas: "t1 t1"
- "datos consul"
- "selec selec"
- ". enviar"; }
+    grid-template-areas: "t1 t1" "datos consul" "selec selec" ". enviar"; }
     .gridFormulario .datos {
       display: block; }
       .gridFormulario .datos label input {
@@ -440,8 +434,7 @@ footer {
     display: grid;
     grid-template-columns: 14.25rem auto;
     grid-template-rows: 1fr 2fr;
-    grid-template-areas: "menuPrincipal antetitulo"
- "articulo articulo"; }
+    grid-template-areas: "menuPrincipal antetitulo" "articulo articulo"; }
     body main .gridmain .antetitulo h2 {
       width: 7.5rem;
       height: 2rem;
@@ -481,8 +474,7 @@ footer {
     display: grid;
     grid-template-columns: 10rem auto;
     grid-template-rows: 1fr 2fr;
-    grid-template-areas: "menuPrincipal antetitulo"
- "articulo articulo"; }
+    grid-template-areas: "menuPrincipal antetitulo" "articulo articulo"; }
     body main .gridmain .antetitulo h2 {
       width: 7rem;
       height: 2rem;
